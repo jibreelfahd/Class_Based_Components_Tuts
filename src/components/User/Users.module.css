@@ -1,0 +1,29 @@
+.user--list {
+  margin: 2rem auto;
+   max-width: 40rem;
+  background: #fff;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 12px;
+}
+
+.user--list ul {
+  margin: 0;
+  padding: 0;
+}
+
+.user--list button {
+  font: inherit;
+  cursor: pointer;
+  color: #fff;
+  background: #800040;
+  border: 1px solid #800040;
+  border-radius: 8px;
+  padding: 0.75rem 2rem;
+}
+
+button:hover,
+button:active {
+  background-color: #630032;
+  border-color: #630032;
+}
