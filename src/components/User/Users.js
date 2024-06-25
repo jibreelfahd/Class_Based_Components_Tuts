@@ -3,16 +3,9 @@ import React, { Component } from "react";
 import User from "./User";
 import styles from "./Users.module.css";
 
-const DATA_USERS = [
-  { id: "g1", name: "Zangetsu" },
-  { id: "g2", name: "Kageyoshi" },
-  { id: "g3", name: "Senbonzakura" },
-];
-
 class Users extends Component {
   constructor() {
     super();
-
     this.state = {
       showUsers: false,
     };
@@ -27,7 +20,7 @@ class Users extends Component {
   }
 
   render() {
-    const userList = DATA_USERS.map((users) => (
+    const userList = this.props.user.map((users) => (
       <User key={users.id} name={users.name} />
     ));
 
