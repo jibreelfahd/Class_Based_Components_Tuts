@@ -31,12 +31,10 @@ class UserFinder extends Component {
   }
 
   filterUserHandler(event) {
-    this.setState({ searchUser: event.target.user });
+    this.setState({ searchUser: event.target.value });
   }
 
   render() {
-    // console.log(this.context.user)
-    console.log(this.state.filteredUsers);
     return (
       <>
         <div className={styles.input}>
